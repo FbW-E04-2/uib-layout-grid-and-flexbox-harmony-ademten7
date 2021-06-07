@@ -18,3 +18,49 @@
 }
 
 /* Add your styles below here*/
+.container {
+  padding: 0.5em;
+  background-color: rgb(46, 45, 45);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5em;
+  grid-auto-rows: minmax(400px, auto);
+  grid-auto-columns: minmax(20px, 150px);
+}
+.container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+.container div:hover {
+  opacity: 1;
+}
+.bg1 div,
+.bg2 div {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  opacity: 0.5;
+}
+.bg1 div:hover,
+.bg2 div:hover {
+  opacity: 1;
+}
+
+.div1 {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+.div5 {
+  grid-row: span 2;
+}
+.div7 {
+  grid-column: span 2;
+}
+.div10 {
+  grid-column: span 3;
+}
